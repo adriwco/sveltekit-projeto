@@ -1,0 +1,68 @@
+
+/*------------------ cores ------------------*/
+:root{
+  --bg: #121212;
+  --feat: #ff3e00;
+}
+/*------------------ reset ------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*------------------ site ------------------*/
+body{ 
+  font-family: 'Cabin', sans-serif;
+}
+h1,h2,h3{
+  font-family: 'Roboto Condensed Variable', sans-serif;
+}
+
