@@ -18,27 +18,26 @@
     min-height: 360px;
     background-size: cover;
     background-position: center;
-    display: grid;
-    align-content: center;
-    justify-content: start;
     position: relative;
+    z-index: 0;
   }
   .intro::after {
     content: '';
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.55);
+    z-index: -1;
   }
   .intro__wrapper {
     z-index: 1;
+    padding-top: 60px;
   }
   .intro__wrapper h1 {
     max-width: 300px;
+    margin-bottom: 20px;
   }
   .intro__wrapper p {
     max-width: 450px;
-  }
-  .btn {
-    margin-top: 24px;
+    margin-bottom: 24px;
   }
 </style>
