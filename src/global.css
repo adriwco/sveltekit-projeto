@@ -3,6 +3,8 @@
 :root{
   --bg: #121212;
   --feat: #ff3e00;
+  --white: #ffffff;
+  --black: #121212;
 }
 /*------------------ reset ------------------*/
 *,
@@ -35,7 +37,7 @@ ul {
   list-style: none;
 }
 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 blockquote,
@@ -61,8 +63,35 @@ img {
 /*------------------ site ------------------*/
 body{ 
   font-family: 'Cabin', sans-serif;
+  background-color: var(--bg);
+  color: var(--white);
 }
 h1,h2,h3{
   font-family: 'Roboto Condensed Variable', sans-serif;
 }
-
+h1{
+  font-size: calc(36 / 16 * 1rem);
+  line-height: 1.2;
+}
+p{
+  font-size: calc(18 / 16 * 1rem);
+}
+.wrap{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+.btn{
+  color: var(--white);
+  font-size: 1rem;
+  border: 1px solid var(--white);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 250ms;
+}
+.btn:hover{
+  background-color: var(--white);
+  color: var(--black);
+  transition: 125ms;
+}
